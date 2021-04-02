@@ -1,0 +1,105 @@
+body {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    background-color: lightsalmon;
+}
+
+.navbar {
+    color: lightsalmon;
+    background-color:teal;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content:space-evenly;
+}
+
+.navbar ul a {
+    text-decoration: none;
+}
+
+.intro {
+    display:flex;
+    height: 30rem;
+    font-size: 2rem;
+    background-color:lightsalmon;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1 {
+    color: coral;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    margin-top :-0.625rem;
+}   
+
+.summary {
+    padding: 0 1rem;
+    font-size:1.80rem;
+}
+
+.summary h2{
+    color: yellow;
+}
+
+.pic-block,.quote,.summary,.meetups {
+    margin: 4rem auto;
+    
+}
+
+.pic-block img {
+    width: 30%;
+    margin: 1.5%;
+}
+
+.quote {
+    background-color: teal;
+    height: 20rem;
+    color: yellow;
+    font-size:2rem;
+}
+.quote div {
+    position: relative;
+    top:20%;
+    left:5%;
+    font-size:2rem;
+    line-height:2;
+    
+}
+
+.meetups {
+    text-align: center;
+    font-size: 2rem;
+    color: yellow;
+}
+
+.meetups img{
+    width:50%;
+    height:auto;
+    margin: auto;
+    display: block;
+}
+
+@media only screen and (max-width:900px){
+    .pic-block img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .navbar li{
+        display: block;
+        text-align: center;
+    }
+    .intro {
+        max-height: 200px;
+    }
+}
